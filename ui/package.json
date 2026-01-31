@@ -13,7 +13,6 @@
     "@copilotkit/react-core": "^1.50.1",
     "@copilotkit/react-ui": "^1.50.1",
     "@copilotkit/runtime": "^1.50.1",
-    "@copilotkitnext/runtime": "^0.0.33",
     "@langchain/langgraph-sdk": "^1.3.1",
     "test-history-agui": "^0.1.0",
     "next": "^14.2.0",
@@ -30,5 +29,3 @@
     "typescript": "^5.7.2"
   }
 }
-
-
