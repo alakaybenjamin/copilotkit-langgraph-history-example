@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fastapi-nextjs-agent"
+version = "0.1.0"
+description = "Example FastAPI agent with CopilotKit history persistence"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "fastapi>=0.100.0",
+    "uvicorn>=0.24.0",
+    "langgraph>=0.2.0",
+    "langchain>=0.2.0",
+    "langchain-openai>=0.1.0",
+    "psycopg[binary,pool]>=3.1.0",
+    "asyncpg>=0.29.0",
+    "langgraph-checkpoint-postgres>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "copilotkit>=0.1.74",
+    "ag-ui-langgraph>=0.0.21",
+    "copilotkit-langgraph-history>=0.1.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.hatch.build.targets.sdist]
+include = ["*.py"]
+
